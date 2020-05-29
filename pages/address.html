@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Get Direction</title>
+    <!-- favicon -->
+  <link rel="shortcut icon"type="image/png" href="../images/logo.jpg">
+<!-- Fonts css -->
+<link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Bangers&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<style>
+  
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+    #map{
+      border-radius: 10px;
+        box-shadow: 0 0 20px rgba(158, 156, 156, 0.8)
+        
+    }
+
+    .bg-dark{
+background-color:#7ebbe5    !important;
+}
+.navbar{
+    box-shadow: 0 0 10px rgba(33,33,33,.5)
+}
+
+.navbar-brand{
+
+    font-family: 'Amaranth', sans-serif ;
+font-size: 28px;
+
+}
+.navbar-dark .navbar-nav .nav-link{
+
+font-weight: 700;
+font-size: 14px;
+text-transform: uppercase;
+
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 10px;
+}
+.para{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+
+
+span{
+    background: #fff
+    
+}
+
+
+h2{
+color: #da4e3f;
+    font-family: 'Amaranth', sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 50px;
+    max-width: 600px;
+   
+    position:relative;
+    padding-top: 30px;
+    text-shadow:0 0 11px rgba(33,33,33,.1);
+    
+
+}
+
+h2:before{
+    content: "";
+    display:inline-flex;
+    width: 20px;
+    height:2px;
+    background: lightgray;
+  
+    z-index: -2;
+    }
+
+    h2::after{
+        content: "";
+        display:inline-flex;
+        width: 20px;
+        height:2px;
+        background: lightgray;
+      
+        z-index: -2;
+        }
+    
+</style>
+
+
+</head>
+<body onload="MyFunction()">
+  <div id="Loading"></div>
+     <!-- navbar start -->
+
+  <div class=" fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container">
+        <a  class="navbar-brand" href="#"> <img src="../images/logo.jpg"  width="50px
+          " alt=""> Faisal Quick Center</a>
+       
+
+        <!-- col-auto start -->
+<!-- 
+        <div class="col-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item  ">
+                <a class="nav-link" href="index.html">Home </a>
+              </li>
+              
+              <li class="nav-item " >
+                <a class="nav-link" href="#Our Services">Services</a>
+              </li> -->
+
+                        <!------------------ dropdown start--------------------- -->
+
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+
+                        <!------------------ dropdown End--------------------- -->
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#Aboutus">About Us</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+            </ul>
+
+          </div> -->
+        </div>
+        <!-- col-auto end -->
+      </div>
+    </nav>
+  </div>
+  <!-- navbar end -->
+
+  <div  class="d-flex p-5 bd-highlight">nav</div>
+
+<!-- Direction start -->
+<div  class="container " id="map" >
+  <h2 class=" mt-2 line-height-1"><span > Get Direction</span></h2> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14470.990495286536!2d67.04442018676757!3d24.94066609714189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f877fe4e7cd%3A0xb1a5812d49885796!2sFaisal%20Quick%20Center!5e0!3m2!1sen!2s!4v1589657135931!5m2!1sen!2s" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+<br>
+<br>
+
+<p class="para " >Shop # 11 Ashraf masjid haidery .in between Block D & C
+    Behind TTC technical college apposite Noor jahan Police station
+    Hazori park road wafi khan Street
+    Karachi, 74600
+    Pakistan</p>
+    
+</div>
+<!-- Direction End-- -->
+
+ <!-- Copyright -->
+ <div style=" font-family: 'Ubuntu', sans-serif;" class="footer-copyright text-center py-3 bg-light" >© 2020 Copyright:
+    <a href="../index.html" style=" font-family: 'Ubuntu', sans-serif;"> Faisal Quick Center</a>
+  </div>
+  <!-- Copyright -->
+<!-- loding script -->
+
+<script>
+  var prelaoder = document.getElementById('Loading')
+  function MyFunction(){
+    prelaoder.style.display = 'none'
+  }
+  
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
